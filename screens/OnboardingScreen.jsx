@@ -3,25 +3,35 @@ import React from 'react';
 import Swiper from 'react-native-swiper';
 import { StatusBar } from 'expo-status-bar';
 import CustomButton from '../components/CustomButton';
+import { useNavigation } from '@react-navigation/native';
 
 
 
 const OnboardingScreen = () => {
+  const navigation = useNavigation();
+
+  const handleSignIn = ()=>{
+    navigation.navigate('signin')
+    
+  }
     const onboardingData = [
         {
             imageUrl: require('../assets/ob1.png'),
             title: 'Fastest Payment in the world',
-            description: ' Integrate multiple payment methoods to help you up the process quickly'
+            description: ' Integrate multiple payment methoods to help you up the process quickly',
+            action: handleSignIn,
         },
         {
             imageUrl: require('../assets/ob2.png'),
             title: 'The most Secure Platfrom for Customer',
-            description: ' Built-in Fingerprint, face recognition and more, keeping you completely safe'
+            description: ' Built-in Fingerprint, face recognition and more, keeping you completely safe',
+            action: handleSignIn,
         },
         {
             imageUrl: require('../assets/ob3.png'),
             title: 'Paying for Everything is Easy and Convenient',
-            description: 'Built-in Fingerprint, face recognition and more, keeping you completely safe'
+            description: 'Built-in Fingerprint, face recognition and more, keeping you completely safe',
+            action: handleSignIn,
         }
     ]
   return (
@@ -47,6 +57,7 @@ const OnboardingScreen = () => {
          textColor={"white"}
          backgroundColor={"#0066FF"}
          style={styles.buttonContainer}
+         onPress={data.action}
        />
      </View>
    ))}
