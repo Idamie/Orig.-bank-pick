@@ -51,6 +51,7 @@ const SignInScreen = () => {
         textColor={"white"}
         backgroundColor={"#0066FF"}
         style={styles.buttonContainer}
+        onPress={() => navigation.navigate("bottomTab")}
       />
 
 {/* Bottom text or New user sign up text */}
