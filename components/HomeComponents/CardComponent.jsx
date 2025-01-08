@@ -9,7 +9,7 @@ const CardComponent = () => {
           style={styles.imageBackground} >
             {/* Top Images */}
             <View style={styles.topImages}>
-                <Image source={require('../../assets/chip.png')}   />
+                <Image source={require('../../assets/chip.png')}/>
                 <Image source={require('../../assets/wave.png')}/>
             </View>
             {/* Top images ends here */}
