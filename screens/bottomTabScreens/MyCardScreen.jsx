@@ -8,10 +8,10 @@ import TransactionHistory from '../../components/HomeComponents/TransactionHisto
 const MyCardScreen = () => {
   return (
     <View style={styles.container}>
-      <TopSection/>
-      <CardComponent/>
-      <Option/>
-      <TransactionHistory/>
+      <TopSection2/>
+      <CardComponent2/>
+      <Option2/>
+      <TransactionHistory2/>
     </View>
   )
 }
