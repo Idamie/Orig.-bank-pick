@@ -1,7 +1,7 @@
 import { StyleSheet, Text, TouchableOpacity, View, ScrollView, Image } from 'react-native'
 import React from 'react'
 
-const TransactionHistory = () => {
+const MyTransactionHistory = () => {
     const transactionData =[
         {
             imgUrl: require('../../assets/apple.png'),
@@ -17,13 +17,7 @@ const TransactionHistory = () => {
             amount: '- $12,99',
             color: 'white'
         },
-        {
-            imgUrl: require('../../assets/trans.png'),
-            paymentType: 'Money Transfer',
-            categories: 'Transaction',
-            amount: '$300',
-            color: '#0066FF'
-        },
+        
         {
             imgUrl: require('../../assets/groce.png'),
             paymentType: 'Grocery',
@@ -66,7 +60,7 @@ const TransactionHistory = () => {
   )
 }
 
-export default TransactionHistory
+export default MyTransactionHistory
 
 const styles = StyleSheet.create({
     transaction:{

@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, ImageBackground, Image } from "react-native";
 import React from "react";
 
-const CardComponent = () => {
+const MyCardComponent = () => {
   return (
     <View style={styles.container}>
       <View style={styles.container2}>
@@ -52,7 +52,7 @@ const CardComponent = () => {
   );
 };
 
-export default CardComponent;
+export default MyCardComponent;
 
 const styles = StyleSheet.create({
   imageBackground: {

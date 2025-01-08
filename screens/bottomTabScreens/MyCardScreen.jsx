@@ -1,17 +1,15 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import TopSection from '../../components/HomeComponents/TopSection'
-import CardComponent from '../../components/HomeComponents/CardComponent'
-import Option from '../../components/HomeComponents/Option'
-import TransactionHistory from '../../components/HomeComponents/TransactionHistory'
+import MyCardComponent from '../../components/MyCardComponents/MyCardComponent'
+import MyTopSection from '../../components/MyCardComponents/MyTopSection'
+import MyTransactionHistory from '../../components/MyCardComponents/MyTransactionHistory'
 
 const MyCardScreen = () => {
   return (
     <View style={styles.container}>
-      <TopSection2/>
-      <CardComponent2/>
-      <Option2/>
-      <TransactionHistory2/>
+      <MyCardComponent/>
+      <MyTopSection/>
+      <MyTransactionHistory/>
     </View>
   )
 }
