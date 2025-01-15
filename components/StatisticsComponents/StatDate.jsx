@@ -4,12 +4,13 @@ import React from 'react'
 const StatDate = () => {
   return (
     <View style={styles.textContainer}>
-      <Text> Oct </Text>
-      <Text> Nov </Text>
-      <Text> Dec </Text>
-      <Text> Jan </Text>
-      <Text> Feb </Text>
-      <Text> Mar </Text>
+      <Text  style={styles.textStyle}> Oct </Text>
+      <Text style={styles.textStyle}> Nov </Text>
+      <Text style={styles.textStyle}> Dec </Text>
+      <Text style={styles.textStyle}> Jan </Text>
+      <Text style={styles.textStyle}> Feb </Text>
+      <Text style={styles.textStyle}> Mar </Text>
+        
     </View>
   )
 }
@@ -20,10 +21,17 @@ const styles = StyleSheet.create({
     textContainer: {
         flexDirection: "row",
         justifyContent: "space-between",
-        color: "white",
+      },
+      textStyle:{
+        color: "#A2A2A7",
         fontFamily: "poppins",
-        fontSize: 18,
+        fontSize: 15,
         fontWeight: 400,
-        
+      },
+      activeDotstyle:{
+        backgroundColor: "#0066FF",
+        borderRadius: 8,
+        width: 47,
+        height: 28
       }
 })

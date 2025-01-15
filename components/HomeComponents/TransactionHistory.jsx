@@ -109,6 +109,6 @@ const styles = StyleSheet.create({
         marginVertical: 16
     },
     scrollContainer:{
-       maxHeight: 150
+       maxHeight: 210
     }
 })
